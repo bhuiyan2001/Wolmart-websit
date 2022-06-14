@@ -1,0 +1,178 @@
+@import '../../mixins/mixins';
+@import '../../variable/variable';
+
+/*===========================================
+     vendor listing header part start
+============================================*/
+#vendor_header {
+     padding: 30px;
+
+     .header_left {
+          a {
+               padding: 10px 20px;
+               background: $hover;
+               @include fstyle(#fff, 14px, 600);
+               font-family: $ff;
+               border-radius: 5px;
+               -webkit-border-radius: 5px;
+               -moz-border-radius: 5px;
+               -ms-border-radius: 5px;
+               -o-border-radius: 5px;
+          }
+
+          p {
+               display: inline-block;
+          }
+     }
+
+     .vendor_header_right {
+          margin-left: auto;
+
+          p {
+               display: inline-block;
+               @include fstyle(#666, 15px, 400);
+               font-family: $ff;
+          }
+
+          select {
+               padding: 8px 60px 8px 10px;
+
+               @include fstyle(#666, 14px, 500);
+               font-family: $ff;
+               border-color: #ccc;
+          }
+
+          a {
+               i {
+                    font-size: 18px;
+                    color: #333;
+                    margin-left: 10px;
+               }
+          }
+     }
+
+     .filter_body {
+          margin-top: 30px;
+          padding: 20px 10px;
+          box-shadow: 0px 4px 17px -2px rgba(0, 0, 0, 0.2);
+          display: flex;
+
+          input {
+               padding: 5px 20px;
+               @include fstyle(#666, 14px, 400);
+               font-family: $ff;
+               width: 100%;
+          }
+
+          a {
+               padding: 8px 15px;
+               background: $hover;
+               @include fstyle(#fff, 14px, 600);
+               font-family: $ff;
+               margin-left: 10px;
+               border-radius: 5px;
+               -webkit-border-radius: 5px;
+               -moz-border-radius: 5px;
+               -ms-border-radius: 5px;
+               -o-border-radius: 5px;
+          }
+     }
+}
+
+/*===========================================
+     vendor listing header part end
+============================================*/
+/*===========================================
+     vendor listing body part start
+============================================*/
+#vendor_body {
+     margin-bottom: 60px;
+
+     .vendor_body_item {
+          border: 1px solid #eee;
+          margin-top: 20px;
+
+          .text {
+               margin-left: 60px;
+               height: 100%;
+
+               h4 {
+                    @include fstyle(#333, 20px, 600);
+                    font-family: $ff;
+                    padding-top: 40px;
+                    padding-bottom: 20px;
+               }
+
+               ul {
+                    li {
+                         i {
+                              color: #ff9742;
+                              font-size: 14px;
+                         }
+                    }
+               }
+
+               p {
+                    @include fstyle(#666, 13px, 400);
+                    font-family: $ff;
+                    margin-bottom: 10px;
+               }
+
+               a {
+                    @include fstyle(#333, 15px, 500);
+                    font-family: $ff;
+               }
+
+               position: relative;
+
+               .logo {
+                    width: 85px;
+                    height: 85px;
+                    background: #ff9742;
+                    border: 1px solid #f1f1f1;
+                    position: absolute;
+                    top: 50%;
+                    left: -130px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+
+                    img {
+                         border-radius: 50%;
+                         -webkit-border-radius: 50%;
+                         -moz-border-radius: 50%;
+                         -ms-border-radius: 50%;
+                         -o-border-radius: 50%;
+                         transition: all linear .2s;
+                         -webkit-transition: all linear .2s;
+                         -moz-transition: all linear .2s;
+                         -ms-transition: all linear .2s;
+                         -o-transition: all linear .2s;
+                    }
+               }
+          }
+          &:hover {
+               .logo {
+                    img {
+                         transform: translateX(-10px);
+                         -webkit-transform: translateX(-10px);
+                         -moz-transform: translateX(-10px);
+                         -ms-transform: translateX(-10px);
+                         -o-transform: translateX(-10px);
+                    }
+               }
+          }
+     }
+
+}
+
+/*===========================================
+     vendor listing body part end
+============================================*/

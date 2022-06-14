@@ -1,0 +1,90 @@
+@import '../../mixins/mixins';
+@import '../../variable/variable';
+
+/*===========================================
+            shop list part start
+============================================*/
+.shop_list_product {
+    border-bottom: 1px solid #eee;
+    .product_box{
+        margin-bottom: 20px;
+        .product_text {
+            a {
+                @include fstyle(#333, 12px, 400);
+                font-family: $ff;
+    
+                &:hover {
+                    color: $hover;
+                }
+            }
+    
+            h4 {
+                a {
+                    @include fstyle(#333, 18px, 600);
+                    font-family: $ff;
+                }
+            }
+    
+            ul {
+                li {
+                    >i {
+                        color: #f95;
+                        font-size: 12px;
+                    }
+    
+                    span {
+                        @include fstyle(#666, 12px, 400);
+                        font-family: $ff;
+                        margin-left: 5px;
+                    }
+                }
+            }
+    
+            h5 {
+                @include fstyle(#333, 18px, 600);
+                font-family: $ff;
+                padding: 10px 0;
+            }
+    
+            p {
+                @include fstyle(#666, 14px, 400);
+                font-family: $ff;
+            }
+    
+            button {
+                padding: 10px 15px;
+                border: 2px solid #ccc;
+                @include fstyle(#333, 15px, 500);
+                font-family: $ff;
+                margin-top: 10px;
+    
+                &:hover {
+                    color: #fff;
+                    background: $hover;
+                    border-color: $hover;
+                }
+                i{
+                    color: #666;
+                }
+                float: left;
+            }
+    
+            .buttom_icon {
+                margin-top: 20px;
+                float: left;
+                li {
+                    i {
+                        margin-left: 20px;
+                        font-size: 16px;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+/*===========================================
+            shop list part end
+============================================*/

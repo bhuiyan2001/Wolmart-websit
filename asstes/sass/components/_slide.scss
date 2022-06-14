@@ -1,0 +1,287 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+/*=====================================
+         slide part start
+======================================*/
+#slide {
+    padding-bottom: 60px;
+    .mega_slide {
+
+        >i.nxt_arr {
+            font-size: 20px;
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        >i.prv_arr {
+            font-size: 20px;
+            position: absolute;
+            top: 30px;
+            cursor: pointer;
+            right: 40px;
+            z-index: 9;
+        }
+
+        .slide_left {
+            padding: 20px;
+            border: 1px solid #f1f1f1;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+
+            &:hover {
+                border-color: $hover;
+            }
+
+            p {
+                @include fstyle(#333, 18px, 600);
+                font-family: $ff;
+                margin-bottom: 20px;
+            }
+
+            .zoom_part {
+                padding-top: 20px;
+                border-top: 2px solid #f1f1f1;
+
+                .small_img {
+                    button .active {
+                        border-color: $hover;
+                    }
+                }
+
+                .zoom-details {
+                    padding: 20px 0;
+
+                    >a {
+                        @include fstyle(#333, 20px, 600);
+                        font-family: $ff;
+                        padding-bottom: 10px;
+                        display: block;
+                        border-bottom: 2px solid #f1f1f1;
+                    }
+
+                    >h6 {
+                        @include fstyle(#333, 22px, 700);
+                        font-family: $ff;
+                        margin-top: 20px;
+                    }
+
+                    p {
+                        @include fstyle(#666, 14px, 400);
+                        font-family: $ff;
+
+                        span {
+                            @include fstyle($hover, 16px, 600);
+                            font-family: $ff;
+                        }
+                    }
+
+                    >ul {
+                        li {
+                            i {
+                                color: #f77c29;
+                            }
+                        }
+
+                        >a {
+                            @include fstyle(#666, 12px, 400);
+                            font-family: $ff;
+                            margin-left: 8px;
+                        }
+                    }
+
+                    .size {
+                        padding: 10px 0;
+                        border-bottom: 2px solid #f1f1f1;
+
+                        ul {
+                            li {
+                                p {
+                                    @include fstyle(#333, 14px, 400);
+                                    font-family: $ff;
+                                    margin-right: 40px;
+                                    margin-top: 5px;
+                                }
+
+                                a {
+                                    padding: 6px 8px;
+                                    border: 1px solid #f1f1f1;
+                                    @include fstyle(#666, 12px, 400);
+                                    font-family: $ff;
+
+                                    &:hover {
+                                        color: $hover;
+                                        border-color: $hover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .cart {
+                        a {
+                            @include fstyle(#666, 16px, 500);
+                            font-family: $ff;
+                            padding: 10px 40px;
+                            background: #eee;
+                            color: #333;
+                            margin: 20px 0;
+                        }
+                    }
+
+                    .social_icon {
+                        ul {
+                            li {
+                                a {
+                                    i {
+                                        width: 30px;
+                                        height: 30px;
+                                        border: 1px solid #666;
+                                        color: #666;
+                                        line-height: 30px;
+                                        text-align: center;
+                                        border-radius: 50%;
+                                        -webkit-border-radius: 50%;
+                                        -moz-border-radius: 50%;
+                                        -ms-border-radius: 50%;
+                                        -o-border-radius: 50%;
+                                        margin-right: 10px;
+                                    }
+                                }
+
+                                &:nth-child(6) {
+                                    margin-left: 15px;
+                                }
+
+                                &:nth-child(5) {
+                                    margin-right: 20px;
+                                    border-right: 1px solid #666;
+                                }
+
+                                &:nth-child(1):hover a i {
+                                    color: #fff;
+                                    background: $hover;
+                                    border-color: $hover;
+                                }
+
+                                &:nth-child(2):hover a i {
+                                    color: #fff;
+                                    background: #00adef;
+                                    border-color: #00adef;
+                                }
+
+                                &:nth-child(3):hover a i {
+                                    color: #fff;
+                                    background: #f96a02;
+                                    border-color: #f96a02;
+                                }
+
+                                &:nth-child(4):hover a i {
+                                    color: #fff;
+                                    background: #3c8a38;
+                                    border-color: #3c8a38;
+                                }
+
+                                &:nth-child(5):hover a i {
+                                    color: #fff;
+                                    background: #2c567e;
+                                    border-color: #2c567e;
+                                }
+
+                                &:nth-child(6):hover a i {
+                                    color: $hover;
+                                    border-color: $hover;
+                                }
+
+                                &:nth-child(7):hover a i {
+                                    color: $hover;
+                                    border-color: $hover;
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .right_part_slide {
+        >i.nxt_arr {
+            font-size: 20px;
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        >i.prv_arr {
+            font-size: 20px;
+            position: absolute;
+            top: 30px;
+            cursor: pointer;
+            right: 40px;
+            z-index: 9;
+        }
+        .slide_right {
+            padding: 20px;
+            border: 1px solid #f1f1f1;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+
+            &:hover {
+                border-color: $hover;
+            }
+
+            >p {
+                @include fstyle(#333, 18px, 600);
+                font-family: $ff;
+                padding-bottom: 20px;
+                border-bottom: 2px solid #f1f1f1;
+            }
+
+            .seller_item {
+                padding-top: 20px;
+
+
+                .right_img {
+                    padding-right: 20px;
+                }
+
+                a {
+                    @include fstyle(#333, 14px, 500);
+                    font-family: $ff;
+
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+
+                ul {
+                    li {
+                        color: #f96a02;
+                        font-size: 12px;
+
+                        &:nth-child(4),
+                        &:nth-child(5) {
+                            color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+         slide part end
+======================================*/

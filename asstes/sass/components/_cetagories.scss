@@ -1,0 +1,100 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+/*=====================================
+         cetagories part start
+======================================*/
+#cetagories {
+    padding: 60px 0;
+    background: #f1f1f1;
+
+    .cetagories_head {
+        p {
+            @include fstyle(#333, 20px, 700);
+            font-family: $ff;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    .cet_img {
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            box-shadow: 0px 0px 10px -4px #888888;
+        }
+
+        .text {
+            P {
+                position: absolute;
+                left: 50%;
+                bottom: 10px;
+                @include fstyle(#333, 14px, 600);
+                font-family: $ff;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+            }
+
+            a {
+                position: absolute;
+                left: 50%;
+                bottom: 10px;
+                @include fstyle($hover, 14px, 600);
+                font-family: $ff;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                display: none;
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: 0;
+                    width: 0;
+                    height: 2px;
+                    background: $hover;
+                    transition: all linear .3s;
+                    -webkit-transition: all linear .3s;
+                    -moz-transition: all linear .3s;
+                    -ms-transition: all linear .3s;
+                    -o-transition: all linear .3s;
+                }
+
+            }
+        }
+
+        &:hover {
+            .text a {
+                display: block;
+            }
+        }
+
+        &:hover {
+            .text p {
+                display: none;
+            }
+        }
+    }
+}
+
+/*=====================================
+         cetagories part end
+======================================*/

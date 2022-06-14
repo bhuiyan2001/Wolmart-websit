@@ -1,0 +1,86 @@
+@import '../../mixins/mixins';
+@import '../../variable/variable';
+
+/*===========================================
+            vendor cetagories part start
+============================================*/
+.vendor_cetagories {
+    .shop_categories_list {
+        .Best_Selling {
+            .seller_item {
+                padding-top: 20px;
+
+
+                .right_img {
+                    padding-right: 20px;
+                }
+
+                a {
+                    @include fstyle(#333, 14px, 500);
+                    font-family: $ff;
+
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+
+                ul {
+                    li {
+                        color: #f96a02;
+                        font-size: 12px;
+
+                        &:nth-child(4),
+                        &:nth-child(5) {
+                            color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact_form {
+        padding: 20px 0;
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            @include fstyle(#aaa, 13px, 400);
+            font-family: $ff;
+            margin-bottom: 10px;
+            border: 1px solid #aaa;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+        }
+
+        textarea {
+            height: 170px;
+        }
+
+        a {
+            @include fstyle(#fff, 14px, 500);
+            font-family: $ff;
+            padding: 10px 20px;
+            background: #333;
+            margin-top: 10px;
+
+            &:hover {
+                background: #454545;
+            }
+
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+    }
+}
+
+/*===========================================
+            vendor cetagories part end
+============================================*/

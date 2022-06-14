@@ -1,0 +1,116 @@
+@import '../../mixins/mixins';
+@import '../../variable/variable';
+
+/*===========================================
+            elements part start
+============================================*/
+#elements {
+  padding: 80px 0;
+
+  .elements_header {
+    h4 {
+      @include fstyle(#333, 30px, 700);
+      font-family: $ff;
+      margin-bottom: 30px
+    }
+
+    p {
+      @include fstyle(#333, 14px, 400);
+      font-family: $ff;
+      margin-bottom: 30px
+    }
+  }
+
+  .elements_body {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        width: 18.59786%;
+        height: 160px;
+        box-shadow: 0px 0px 10px -4px #888888;
+        margin: 0 20px 20px 0;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        &:nth-child(5) {
+          margin-right: 0;
+        }
+
+        &:nth-child(10) {
+          margin-right: 0;
+        }
+
+        &:nth-child(15) {
+          margin-right: 0;
+        }
+
+        position: relative;
+
+        a {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+
+          svg {
+            fill: #aaa;
+            stroke: #aaa;
+            stroke-dashoffset: 1500;
+            stroke-dasharray: 1500;
+            -webkit-transition: fill 0.5s, -webkit-transform 0.3s;
+            transition: fill 0.5s, -webkit-transform 0.3s;
+            transition: transform 0.3s, fill 0.5s;
+            transition: transform 0.3s, fill 0.5s, -webkit-transform 0.3s;
+            -moz-transition: fill 0.5s, -webkit-transform 0.3s;
+            -ms-transition: fill 0.5s, -webkit-transform 0.3s;
+            -o-transition: fill 0.5s, -webkit-transform 0.3s;
+          }
+
+
+
+        }
+
+        p {
+          @include fstyle(#333, 15px, 600);
+          font-family: $ff;
+
+          &:hover {
+            color: $hover;
+          }
+        }
+
+        &:hover {
+          a {
+            svg {
+              transform: scale(1.6);
+              -webkit-transform: scale(1.6);
+              -moz-transform: scale(1.6);
+              -ms-transform: scale(1.6);
+              -o-transform: scale(1.6);
+              stroke-dashoffset: 0;
+              stroke: #336699;
+              fill: transparent;
+              -webkit-transition: fill 0.5s, stroke-dashoffset 6s, -webkit-transform 0.3s;
+              transition: fill 0.5s, stroke-dashoffset 6s, -webkit-transform 0.3s;
+              transition: transform 0.3s, fill 0.5s, stroke-dashoffset 6s;
+              transition: transform 0.3s, fill 0.5s, stroke-dashoffset 6s, -webkit-transform 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*===========================================
+            elements part end
+============================================*/

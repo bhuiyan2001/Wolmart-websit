@@ -1,0 +1,256 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+/*=====================================
+  clothing apparel service part start
+======================================*/
+#apparel {
+    padding-bottom: 60px;
+
+    .apparel_head {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+
+        p {
+            @include fstyle(#333, 20px, 700);
+            font-family: $ff;
+        }
+
+        a {
+            @include fstyle(#333, 14px, 500);
+            font-family: $ff;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+
+            &:hover {
+                color: $hover;
+            }
+        }
+    }
+
+    .apparel_box {
+        padding-top: 20px;
+
+        .apparel_left {
+            position: relative;
+
+            .left_text {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+
+                p {
+                    @include fstyle(#333, 16px, 500);
+                    font-family: $ff;
+                    padding-bottom: 10px;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        bottom: 0;
+                        width: 40px;
+                        height: 3px;
+                        background: #333;
+                    }
+                }
+
+                h4 {
+                    @include fstyle(#333, 28px, 800);
+                    font-family: $ff;
+                    margin-top: 10px;
+                }
+
+                h5 {
+                    @include fstyle(#333, 26px, 500);
+                    font-family: $ff;
+                }
+
+                a {
+                    @include fstyle(#333, 14px, 500);
+                    font-family: $ff;
+                    padding: 8px 20px;
+                    border: 2px solid #333;
+                    margin-top: 30px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    &:hover {
+                        color: #fff;
+                        background: #333;
+                    }
+                }
+            }
+            .left_text2 {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+
+                p {
+                    @include fstyle(#fff, 16px, 500);
+                    font-family: $ff;
+                    padding-bottom: 10px;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        bottom: 0;
+                        width: 40px;
+                        height: 3px;
+                        background: #fff;
+                    }
+                }
+
+                h4 {
+                    @include fstyle(#fff, 28px, 800);
+                    font-family: $ff;
+                    margin-top: 10px;
+                }
+
+                h5 {
+                    @include fstyle(#fff, 26px, 500);
+                    font-family: $ff;
+                }
+
+                a {
+                    @include fstyle(#fff, 14px, 500);
+                    font-family: $ff;
+                    padding: 8px 20px;
+                    border: 2px solid #fff;
+                    margin-top: 30px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    &:hover {
+                        color: #333;
+                        background: #fff;
+                    }
+                }
+            }
+        }
+        .apparel_right {
+            >ul {
+                display: flex;
+                flex-wrap: wrap;
+    
+                >li {
+                    width: 23.234%;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+    
+                    &:nth-child(4),
+                    &:nth-child(8) {
+                        margin-right: 0;
+                    }
+    
+                    .popular_item {
+                        .slide_img {
+                           img{
+                               &:last-child{
+                                   display: none;
+                               }
+                           }
+                        }
+                        &:hover{
+                            .slide_img {
+                                img{
+                                    &:first-child{
+                                        display: none;
+                                    }
+                                    &:last-child{
+                                        display: block;
+                                    }
+                                }
+                             }
+                        }
+    
+                        .popular_text {
+                            text-align: center;
+    
+                            a {
+                                @include fstyle(#333, 14px, 400);
+                                font-family: $ff;
+                                padding: 20px 0 8px;
+                                &:hover{
+                                    color: $hover;
+                                }
+                            }
+    
+                            >ul {
+                                display: flex;
+                                justify-content: center;
+    
+                                >li {
+                                    color: #f96a02;
+                                    font-size: 12px;
+                                }
+                            }
+    
+                            p {
+                                @include fstyle(#333, 16px, 600);
+                                font-family: $ff;
+                            }
+                        }
+    
+                        position: relative;
+    
+                        &:hover .popular_icons {
+                            display: block;
+                        }
+    
+                        .popular_icons {
+                            position: absolute;
+                            top: 20px;
+                            right: 10px;
+                            display: none;
+    
+                            ul {
+                                li {
+                                    a {
+                                        i {
+                                            color: #666;
+                                            width: 35px;
+                                            height: 35px;
+                                            background: #fff;
+                                            border-radius: 50%;
+                                            line-height: 35px;
+                                            text-align: center;
+                                            -webkit-border-radius: 50%;
+                                            -moz-border-radius: 50%;
+                                            -ms-border-radius: 50%;
+                                            -o-border-radius: 50%;
+                                            margin-bottom: 10px;
+    
+                                            &:hover {
+                                                color: #fff;
+                                                background: $hover;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+  clothing apparel service part start
+======================================*/

@@ -1,0 +1,99 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+/*=====================================
+         banner part start
+======================================*/
+#banner {
+    .slick-dots {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+
+        li {
+            button {
+                font-size: 0;
+                width: 10px;
+                height: 10px;
+                background: transparent;
+                border: 1px solid #9998;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                margin-right: 10px;
+
+                &:hover {
+                    background: #999;
+                }
+            }
+        }
+
+        li.slick-active {
+            button {
+                background: $hover;
+            }
+        }
+
+    }
+
+    .banner_item {
+        padding: 60px 0;
+
+        .banner_img {
+            height: 400px
+        }
+
+        .banner_text {
+            h3 {
+                @include fstyle(#666, 40px, 400);
+                font-family: $ff;
+
+                span {
+                    border-bottom: 3px solid #ff9742;
+                }
+            }
+
+            h1 {
+                @include fstyle(#333, 50px, 700);
+                font-family: $ff;
+                text-transform: uppercase;
+            }
+
+            h5 {
+                @include fstyle(#666, 25px, 400);
+                font-family: $ff;
+
+                span {
+                    color: #ff9742;
+                    font-weight: 600;
+                }
+            }
+
+            a {
+                @include fstyle(#333, 15px, 500);
+                font-family: $ff;
+                text-transform: uppercase;
+                padding: 10px 30px;
+                margin-top: 30px;
+                border: 2px solid #333;
+
+                &:hover {
+                    background: #333;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+         banner part end
+======================================*/

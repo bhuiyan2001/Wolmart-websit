@@ -1,0 +1,103 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+/*=====================================
+        second service part start
+======================================*/
+#snd_service {
+    padding-bottom: 60px;
+  
+    .service_img{
+        .img_box{
+            position: relative;
+            .img_text{
+                position: absolute;
+                top: 35px;
+                left: 35px;
+                p{
+                    @include fstyle(#fff, 16px, 500);
+                    font-family: $ff;
+                }
+                h4{
+                    @include fstyle(#fff, 26px, 700);
+                    font-family: $ff;
+                }
+                a{
+                    @include fstyle(#fff, 15px, 500);
+                    font-family: $ff;
+                    text-transform: uppercase;
+                    margin-top: 15px;
+                    i{
+                        margin-left: 5px;
+                    }
+                    &:hover {
+                        &::after {
+                            width: 100px;
+                        }
+                    }
+    
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        bottom: 0;
+                        width: 0;
+                        height: 3px;
+                        background: #fff;
+                        transition: all linear .3s;
+                        -webkit-transition: all linear .3s;
+                        -moz-transition: all linear .3s;
+                        -ms-transition: all linear .3s;
+                        -o-transition: all linear .3s;
+                    }
+                }
+            }
+            .img_text2{
+                position: absolute;
+                top: 35px;
+                left: 35px;
+                p{
+                    @include fstyle(#333, 16px, 500);
+                    font-family: $ff;
+                }
+                h4{
+                    @include fstyle(#333, 26px, 700);
+                    font-family: $ff;
+                }
+                a{
+                    @include fstyle(#333, 15px, 500);
+                    font-family: $ff;
+                    text-transform: uppercase;
+                    margin-top: 15px;
+                    display: inline-block;
+                    i{
+                        margin-left: 5px;
+                    }
+                    &:hover {
+                        &::after {
+                            width: 100px;
+                        }
+                    }
+    
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        bottom: 0;
+                        width: 0;
+                        height: 3px;
+                        background: #333;
+                        transition: all linear .3s;
+                        -webkit-transition: all linear .3s;
+                        -moz-transition: all linear .3s;
+                        -ms-transition: all linear .3s;
+                        -o-transition: all linear .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+        second service part end
+======================================*/

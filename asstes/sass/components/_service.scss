@@ -1,0 +1,98 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+/*=====================================
+         service part start
+======================================*/
+#service {
+    padding-top: 30px;
+    .service_part {
+        padding: 25px 40px;
+        border: 1px solid #f1f1f1;
+        .service_box {
+            .icon{
+                i{
+                    font-size: 30px;
+                    margin-right: 10px;
+                    color: $hover;
+                }
+            }
+            .text {
+                h4 {
+                    @include fstyle(#333, 16px, 500);
+                    font-family: $ff;
+                }
+                p{
+                    @include fstyle(#666, 14px, 400);
+                    font-family: $ff;
+                }
+            }
+        }
+    }
+    .service_img{
+        padding: 60px 0;
+        .img_box{
+            position: relative;
+            .img_text{
+                position: absolute;
+                top: 35px;
+                left: 35px;
+                h6{
+                    @include fstyle(#333, 18px, 400);
+                    font-family: $ff;
+                    span{
+                        color: #f77c29;
+                        font-weight: 600;
+                    }
+                }
+                h4{
+                    @include fstyle(#333, 26px, 700);
+                    font-family: $ff;
+                }
+                h5{
+                    @include fstyle(#333, 24px, 500);
+                    font-family: $ff;
+                    margin-bottom: 20px;
+                }
+                p{
+                    @include fstyle(#666, 14px, 400);
+                    font-family: $ff;
+                    span{
+                        color: #f77c29;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .img_text2{
+                position: absolute;
+                top: 35px;
+                left: 35px;
+                h6{
+                    @include fstyle(#fff, 18px, 400);
+                    font-family: $ff;
+                }
+                h4{
+                    @include fstyle(#fff, 26px, 700);
+                    font-family: $ff;
+                }
+                h5{
+                    @include fstyle(#fff, 24px, 500);
+                    font-family: $ff;
+                    margin-bottom: 20px;
+                }
+                p{
+                    @include fstyle(#fff, 14px, 400);
+                    font-family: $ff;
+                    span{
+                        color: #f77c29;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+         service part end
+======================================*/

@@ -1,0 +1,20 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+/*=====================================
+         blog grid part start
+======================================*/
+#blog_body {
+    .blog_mixitup_button {
+        button {
+            @include fstyle(#333, 16px, 500);
+            font-family: $ff;
+            border: none;
+            background: transparent;
+        }
+    }
+}
+
+/*=====================================
+         blog grid part end
+======================================*/

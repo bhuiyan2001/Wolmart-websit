@@ -1,0 +1,76 @@
+@import '../../mixins/mixins';
+@import '../../variable/variable';
+
+/*===========================================
+            shop banner part start
+============================================*/
+#shop_banner {
+    .shop_banner_text {
+
+        h4 {
+            @include fstyle(#333, 30px, 600);
+            font-family: $ff;
+        }
+
+        h1 {
+            @include fstyle(#fff, 40px, 700);
+            font-family: $ff;
+        }
+
+        a {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #333;
+            @include fstyle(#fff, 15px, 500);
+            font-family: $ff;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            &:hover{
+                background: #454545;
+            }
+        }
+    }
+}
+/*===========================================
+            shop banner part end
+============================================*/
+/*===========================================
+            shop boxed banner part start
+============================================*/
+.shop_box_banner{
+    padding: 75px ;
+    margin-bottom: 30px;
+    .shop_banner_text{
+        h4 {
+            @include fstyle(#333, 30px, 600);
+            font-family: $ff;
+        }
+
+        h1 {
+            @include fstyle(#fff, 40px, 700);
+            font-family: $ff;
+        }
+
+        a {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #333;
+            @include fstyle(#fff, 15px, 500);
+            font-family: $ff;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            &:hover{
+                background: #454545;
+            }
+        }
+    }
+}
+/*===========================================
+            shop boxed banner part start
+============================================*/

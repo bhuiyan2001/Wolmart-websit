@@ -1,0 +1,230 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+/*=====================================
+        footer part start
+======================================*/
+#footer {
+    .mail_background {
+        padding: 30px 0;
+        background: $hover;
+
+        .footer_mail_part {
+            .mail_left {
+                i {
+                    font-size: 40px;
+                    color: #fff;
+                    margin-right: 20px;
+                }
+
+                .mail_text {
+                    h4 {
+                        @include fstyle(#fff, 18px, 500);
+                        font-family: $ff;
+                    }
+
+                    p {
+                        @include fstyle(#fff, 14px, 400);
+                        font-family: $ff;
+                    }
+                }
+            }
+
+            .mail_right {
+                input {
+                    padding: 10px 20px;
+                    width: 514px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    border: none;
+                }
+
+                a {
+                    padding: 10px 20px;
+                    background: #333;
+                    color: #fff;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+
+                    &:hover {
+                        background: #454545;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .footer_social_part {
+        padding: 70px 0 50px;
+        border-bottom: 1px solid #ccc;
+
+        .footer_logo_part {
+            .logo {
+                width: 145px;
+                margin-bottom: 10px
+            }
+
+            p {
+                @include fstyle(#333, 14px, 400);
+                font-family: $ff;
+                margin-bottom: 10px;
+            }
+
+            >a {
+                @include fstyle(#333, 18px, 600);
+                font-family: $ff;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: $hover;
+                }
+            }
+
+            ul {
+                li {
+                    a {
+                        width: 30px;
+                        height: 30px;
+                        text-align: center;
+                        line-height: 30px;
+                        color: #fff;
+                        background: #fff;
+                        font-size: 14px;
+                        background: $hover;
+                        margin-right: 10px;
+                        margin-top: 10px;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
+
+                    &:nth-child(1) {
+                        a {
+                            background: $hover;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        a {
+                            background: #00adef;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        a {
+                            background: red;
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        a {
+                            background: #2c567e;
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        a {
+                            background: #f96a02;
+                        }
+                    }
+                }
+            }
+        }
+
+        .common_col {
+            margin-left: 50px;
+
+            h5 {
+                @include fstyle(#333, 14px, 600);
+                font-family: $ff;
+            }
+
+            ul {
+                margin-top: 20px;
+
+                li {
+                    a {
+                        @include fstyle(#666, 14px, 400);
+                        font-family: $ff;
+                        margin-bottom: 10px;
+
+                        &:hover {
+                            color: $hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_category {
+        padding: 60px 0 50px;
+        border-bottom: 1px solid #ccc;        
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+
+            li {
+                p {
+                    @include fstyle(#666, 15px, 500);
+                    font-family: $ff;
+                    margin-right: 10px
+                }
+
+                a {
+                    @include fstyle(#666, 14px, 400);
+                    font-family: $ff;
+                    padding: 0 10px;
+                    position: relative;
+                    &:hover{
+                        color: $hover;
+                    }
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        width: 1px;
+                        right: 0;
+                        top: 4px;
+                        height: 13px;
+                        background: #ccc;
+                    }
+                }
+
+                &:last-child {
+                    a {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_end {
+        padding: 35px 0;
+
+        p {
+            @include fstyle(#666, 14px, 400);
+            font-family: $ff;
+            margin-right: 40px;
+        }
+        .payment_img{
+            width: 165px;
+        }
+    }
+}
+
+/*=====================================
+        footer part end
+======================================*/

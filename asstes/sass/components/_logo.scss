@@ -1,0 +1,218 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+/*=====================================
+         Logo part start
+======================================*/
+#logo {
+    padding: 30px;
+    border-bottom: 2px solid #f1f1f1;
+    .logo {
+        img {
+            width: 145px;
+        }
+    }
+    .logo_search {
+        padding: 13px 0;
+        border: 2px solid #336699;
+        select {
+            border: none;
+            width: 146px;
+            padding-left: 5px;
+            cursor: pointer;
+            @include fstyle(#333, 12px, 400);
+            font-family: $ff;
+        }
+        input {
+            border: none;
+            width: 348px;
+            @include fstyle(#333, 12px, 400);
+            font-family: $ff;
+        }
+        button {
+            border: none;
+            background: none;
+            width: 51px;
+
+            .src {
+                font-size: 16px;
+            }
+        }
+    }
+    .logo_right {
+        >a {
+            position: relative;
+            margin-left: 22px;
+            &:nth-child(2) {
+                margin-left: 20px;
+            }
+            &:first-child {
+                padding-left: 30px;
+                padding-right: 20px;
+            }
+            &:first-child::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                right: 0;
+                width: 1px;
+                color: #333;
+            }
+            .phn {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                color: #333;
+                font-size: 26px;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+            }
+            .hrt {
+                color: #333;
+                font-size: 28px;
+                margin-left: 8px;
+            }
+            .blnc {
+                color: #333;
+                font-size: 28px;
+                margin-left: 16px;
+            }
+            .bg {
+                color: #333;
+                font-size: 28px;
+            }
+            p {
+                @include fstyle(#333, 12px, 400);
+                font-family: $ff;
+                span {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 15px;
+                    height: 15px;
+                    line-height: 15px;
+                    text-align: center;
+                    background: #336699;
+                    color: #fff;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+            }
+            h5 {
+                color: #333;
+            }
+            &:hover i,
+            &:hover p,
+            &:hover h5 {
+                color: $hover;
+            }
+        }
+        h5 {
+            @include fstyle(#333, 16px, 700);
+            font-family: $ff;
+        }
+        button {
+            border: none;
+            background: inherit;
+            font-size: 14px;
+            font-weight: 400;
+            color: #666;
+
+            &:hover {
+                color: $hover;
+            }
+        }
+        .offcanvas-end {
+            width: inherit;
+        }
+        .offcanvas-body {
+            padding: 0 30px;
+        }
+        .cart_item {
+            padding-top: 20px;
+            .cart_left {
+                h5 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin: 5px 75px 10px 0;
+                }
+                p {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $hover;
+                    font-family: $ff;
+
+                    span {
+                        color: #666;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .cart_right {
+                position: relative;
+
+                i {
+                    position: absolute;
+                    top: -7px;
+                    right: -7px;
+                    width: 20px;
+                    height: 20px;
+                    font-size: 12px;
+                    background: #fff;
+                    text-align: center;
+                    line-height: 20px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    -webkit-box-shadow: 5px 10px 10px 10px #666;
+                    box-shadow: -1px 1px 4px 0px #666;
+
+                    &:hover {
+                        color: $hover;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .cart_fot {
+            p {
+                padding-top: 20px;
+                @include fstyle(#333, 16px, 600);
+                font-family: $ff;
+
+                span {
+                    padding-left: 168px;
+                }
+            }
+            a {
+                padding: 8px 30px;
+                margin-right: 10px;
+                margin-top: 30px;
+                border: 2px solid #333;
+                @include fstyle(#333, 13px, 600);
+                font-family: $ff;
+                border-radius: 2px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
+                &:hover {
+                    background: $hover;
+                    color: #fff;
+                    border-color: $hover;
+                } 
+            }
+        }
+    }
+}
+/*=====================================
+         Logo part end
+======================================*/

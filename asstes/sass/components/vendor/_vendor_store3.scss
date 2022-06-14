@@ -1,0 +1,147 @@
+@import '../../mixins/mixins';
+@import '../../variable/variable';
+
+/*===========================================
+     vendor store 3  banner part start
+============================================*/
+.banner_img {
+    position: relative;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 50px;
+   
+    
+    .social_icon {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        text-align: right;
+
+        >a {
+            padding: 8px 20px;
+            background: #fff;
+            @include fstyle(#333, 14px, 600);
+            font-family: $ff;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+
+            i {
+                margin-right: 5px;
+            }
+
+            &:hover {
+                background: #333;
+                color: #fff;
+            }
+        }
+
+        ul {
+            justify-content: right;
+
+            li {
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+                margin-top: -20px;
+                text-align: center;
+                line-height: 30px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+
+                &:nth-child(1) {
+                    background: #1b4f9b;
+                }
+
+                &:nth-child(2) {
+                    background: #00adef;
+                }
+
+                &:nth-child(3) {
+                    background: #0073b2;
+                }
+
+                &:nth-child(4) {
+                    background: #2c567e;
+                }
+
+                &:nth-child(5) {
+                    background: #cc0001;
+                }
+
+                a {
+                    i {
+                        color: #fff;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .overly {
+        padding: 75px 0 30px 0;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+        }
+
+        h4 {
+            @include fstyle(#fff, 20px, 600);
+            font-family: $ff;
+            margin-bottom: 10px;
+        }
+
+        .banner_text {
+            justify-content: center;
+
+            p {
+                @include fstyle(#999, 14px, 500);
+                font-family: $ff;
+            }
+
+            a {
+                @include fstyle(#999, 14px, 500);
+                font-family: $ff;
+                padding: 0 10px;
+
+                &:hover {
+                    color: #f95;
+                }
+            }
+        }
+    }
+}
+
+/*===========================================
+     vendor store 3  banner part end
+============================================*/

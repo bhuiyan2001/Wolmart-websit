@@ -1,0 +1,49 @@
+@import '../../mixins/mixins';
+@import '../../variable/variable';
+
+/*===========================================
+     vendor listing 4 body logo part start
+============================================*/
+#vendor_logo {
+    padding: 40px 0;
+    text-align: center;
+
+    .logo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid #eee;
+        margin-left: 18px;
+        transition: all linear .2s;
+        -moz-transition: all linear .2s;
+        -ms-transition: all linear .2s;
+        -o-transition: all linear .2s;
+        -webkit-transition: all linear .2s;
+
+        &:hover {
+            box-shadow: 0px 0px 15px -8px rgba(0, 0, 0, 0.8);
+
+        }
+    }
+
+    .text {
+
+        a {
+            @include fstyle(#333, 14px, 600);
+            font-family: $ff;
+            margin-top: 25px;
+            &:hover{
+                color: $hover;
+            }
+        }
+    }
+}
+
+/*===========================================
+     vendor listing 4 body logo part end
+============================================*/

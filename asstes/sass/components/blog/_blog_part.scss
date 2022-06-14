@@ -1,0 +1,314 @@
+@import '../../mixins/mixins';
+@import '../../variable/variable';
+
+/*===========================================
+            blog classic part start
+============================================*/
+#classic {
+    padding: 65px 0px;
+    background: #eee;
+
+    p {
+        @include fstyle(#fff, 35px, 800);
+        font-family: $ff;
+    }
+}
+
+/*===========================================
+            blog classic part end
+============================================*/
+/*===========================================
+            blog body part end
+============================================*/
+#blog_body {
+    .picture_box {
+        padding: 30px 0;
+
+        &:hover {
+            .picture {
+                overflow: hidden;
+
+                img {
+                    transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                }
+            }
+        }
+
+        .picture_text {
+            margin-top: 10px;
+
+            .bold {
+                a {
+                    @include fstyle(#333, 18px, 600);
+                    font-family: $ff;
+                    padding: 5px 0;
+
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+            }
+
+            .pera {
+                p {
+                    @include fstyle(#333, 13px, 400);
+                    font-family: $ff;
+                    margin-bottom: 10px
+                }
+            }
+
+            p {
+                @include fstyle(#666, 14px, 500);
+                font-family: $ff;
+
+                a {
+                    @include fstyle(#333, 14px, 600);
+                    font-family: $ff;
+
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+            }
+        }
+    }
+
+    /*============= blog categories part start ==================*/
+    .fixt_categories{
+        position: sticky;
+        top: -950px;
+        left: 0;
+
+    }
+    .blog_categories_part {
+        padding: 30px 0;
+       
+
+        .search_box {
+            border: 1px solid #eee;
+            padding: 10px 20px;
+
+            input {
+                border: none;
+                font-size: 14px;
+            }
+
+            position: relative;
+
+            button {
+                border: none;
+                background: transparent;
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+            }
+        }
+
+        .categories_item {
+            padding-top: 40px;
+
+            h4 {
+                @include fstyle(#333, 16px, 600);
+                font-family: $ff;
+            }
+
+            ul {
+                li {
+                    a {
+                        margin-top: 20px;
+                        @include fstyle(#333, 14px, 400);
+                        font-family: $ff;
+                    }
+                }
+            }
+
+            >p {
+                @include fstyle(#333, 14px, 400);
+                font-family: $ff;
+                margin-top: 30px;
+            }
+
+            .brows_tag {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 30px;
+
+                li {
+                    a {
+                        padding: 5px;
+                        @include fstyle(#333, 14px, 400);
+                        font-family: $ff;
+                        border: 1px solid #ccc;
+                        margin: 0 15px 10px 0;
+
+                        &:hover {
+                            color: $hover;
+                            border-color: $hover;
+                        }
+                    }
+                }
+            }
+
+
+            .popular-slide {
+                position: relative;
+
+                .prv_arr,
+                .nxt_arr {
+                    position: absolute;
+                    top: -20px;
+                    right: 0;
+                    color: #666;
+                    cursor: pointer;
+                }
+
+                .prv_arr {
+                    right: 20px;
+                }
+
+                .Best_Selling {
+                    .seller_item {
+                        padding-top: 20px;
+
+
+                        .right_img {
+                            padding-right: 20px;
+                        }
+
+                        .popular_txt {
+                            >a {
+                                @include fstyle(#666, 14px, 400);
+                                font-family: $ff;
+                                padding: 10px 0;
+
+                                &:hover {
+                                    color: $hover;
+                                }
+                            }
+
+                            p {
+                                a {
+                                    @include fstyle(#333, 14px, 500);
+                                    font-family: $ff;
+
+                                    &:hover {
+                                        color: $hover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .calendar-container {
+                margin-top: 20px;
+
+                .special-buttons {
+                    display: none;
+                }
+
+                .buttons-container {
+                    background: $hover;
+                    padding: 10px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+
+                    span {
+                        @include fstyle(#fff, 13px, 500);
+                        font-family: $ff;
+                    }
+
+                    button {
+                        display: none;
+                    }
+                }
+
+                .header {
+                    .week {
+                        >.header {
+                            @include fstyle(#333, 14px, 600);
+                            font-family: $ff;
+                        }
+                    }
+
+
+                }
+
+                .week {
+                    overflow: hidden;
+                    margin: 0;
+
+                    span {
+                        @include fstyle(#333, 14px, 400);
+                        font-family: $ff;
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                .week.highlight {
+                    background: #efefef;
+                }
+
+                .day {
+                    display: inline-block;
+                    width: 14.28%;
+                    text-align: center;
+                    // cursor: pointer;
+                    box-sizing: border-box;
+                }
+
+                .day.disabled span {
+                    color: #AAA;
+                }
+
+                .day.today span {
+                    font-weight: bold;
+                }
+
+                .months-container.hidden,
+                .weeks-container.hidden {
+                    display: none;
+                }
+
+                .months-wrapper {
+                    overflow: hidden;
+                }
+
+                .months-wrapper .month {
+                    display: inline-block;
+                    width: 25%;
+                    text-align: center;
+                    cursor: pointer;
+                }
+
+                .months-wrapper .month.one-third {
+                    width: 33.33%;
+                }
+            }
+        }
+
+    }
+
+    /*============= blog categories part start ==================*/
+
+}
+
+/*===========================================
+            blog body part end
+============================================*/

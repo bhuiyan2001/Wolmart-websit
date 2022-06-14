@@ -1,0 +1,274 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+/*=====================================
+         header part start
+======================================*/
+#header {
+    padding: 14px;
+    background: #f5f6f8;
+
+    .header_text {
+        p {
+            @include fstyle(#333, 12px, 400);
+            font-family: $ff;
+        }
+    }
+
+    .header_right {
+        .currancy {
+            position: relative;
+
+            ul {
+                margin-right: 18px;
+
+                li {
+                    position: relative;
+
+                    a {
+                        @include fstyle(#333, 12px, 400);
+                        font-family: $ff;
+
+                        &:hover {
+                            color: $hover;
+                        }
+                    }
+
+                    ul {
+                        position: absolute;
+                        top: 35px;
+                        left: -10px;
+                        padding: 10px;
+                        visibility: hidden;
+                        opacity: 0;
+                        background: #fff;
+
+                        li {
+                            a {
+                                @include fstyle(#333, 12px, 400);
+                                font-family: $ff;
+                            }
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            top: -20px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            -webkit-transform: translateX(-50%);
+                            -moz-transform: translateX(-50%);
+                            -ms-transform: translateX(-50%);
+                            -o-transform: translateX(-50%);
+                            border-top: 10px solid transparent;
+                            border-bottom: 10px solid #fff;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                        }
+                    }
+
+                    &:hover ul {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &::after {
+                position: absolute;
+                contain: '';
+                width: 5px;
+                height: 100%;
+                color: red;
+            }
+        }
+
+        .hed_reg {
+           > a {
+                color: #000;
+                @include fstyle(#000, 12px, 400);
+                font-family: $ff;
+
+                &:hover {
+                    color: $hover;
+                }
+            }
+        }
+
+        .hed_menu {
+            ul {
+                li {
+                   > a {
+                        @include fstyle(#333, 12px, 400);
+                        font-family: $ff;
+                        margin-right: 18px;
+
+                        &:hover {
+                            color: $hover;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cls_btn {
+            position: absolute;
+            top: -25px;
+            right: 0;
+            z-index: 999;
+            font-size: 20px;
+            color: #fff;
+            background: none;
+            border: none;
+        }
+
+        .sing_body {
+            padding: 40px;
+
+            >ul {
+                li {
+                    width: 48%;
+                    margin-right: 2%;
+                    button {
+                        @include fstyle(#333, 16px, 700);
+                        font-family: $ff;
+                        padding: 16px 66px;
+                        background: none;
+                        width: 100%;
+                        height: 100%;
+
+                        &:hover {
+                            color: #336699;
+                        }
+                    }
+                    .nav-link{
+                        border-bottom: 2px solid #f1f1f1;
+                        &:hover {
+                            color: #336699;
+                            border-bottom: 2px solid #336699;
+                        }
+                    }
+                    .active {
+                        color: #336699;
+                        border-bottom: 2px solid #336699;
+
+                    }
+                }
+            }
+
+            form {
+
+                .form-label,
+                .form-check-label {
+                    color: #666;
+                }
+
+                .frm_btm {
+                    margin-bottom: 25px;
+                }
+               > p {
+                   text-align: left;
+                    font-size: 13px;
+                    font-weight: 400;
+                    font-family: $ff;
+                    color: #666;
+                }
+                a:hover{
+                    border-bottom: 1px solid $hover;
+                }
+
+                button {
+                    border: none;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    width: 400px;
+                    height: 42px;
+                    background: #336699 !important;
+                }
+            }
+
+            p {
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: $ff;
+                padding: 20px 0;
+                color: #666;
+            }
+
+            ul {
+                li {
+                    a {
+                        .fb {
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            margin-right: 10px;
+                            border: 1px solid #336699;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+
+                            &:hover {
+                                color: #fff;
+                                background: #336699;
+                                border-color: #336699;
+                            }
+                        }
+
+                        .twt {
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            margin-right: 10px;
+                            color: #00adef;
+                            border: 1px solid #00adef;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+
+                            &:hover {
+                                color: #fff;
+                                background: #00adef;
+                                border-color: #00adef;
+                            }
+                        }
+
+                        .gg {
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            margin-right: 10px;
+                            color: #dd4b39;
+                            border: 1px solid #dd4b39;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+
+                            &:hover {
+                                color: #fff;
+                                background: #dd4b39;
+                                border-color: #dd4b39;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+         header part end
+======================================*/

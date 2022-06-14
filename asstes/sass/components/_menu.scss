@@ -1,0 +1,492 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+/*=====================================
+         menu part start
+======================================*/
+.fixt_menu{
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    .left_menu{
+        background: #fff !important;
+        border: 1px solid #f1f1f1;
+    }
+}
+.ul_remove{
+    display: none;
+}
+#menu {
+    background: #fff;
+    z-index: 999;
+    .left_menu {
+        padding: 15px 18px;
+        background: #f1f1f1;
+        position: relative;
+        &:hover{
+            .ul_remove{
+                display: block;
+            }
+        }
+
+        >a {
+            @include fstyle(#333, 14px, 600);
+            font-family: $ff;
+            text-transform: uppercase;
+
+            i.fa-chevron-down {
+                font-size: 14px;
+                position: absolute;
+                right: 18px;
+                top: 50%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+            }
+        }
+
+        >ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            width: 100%;
+            box-shadow: 0px 0px 10px -4px #888888;
+            z-index: 99;
+
+            >li {
+                >a {
+                    padding: 10px 18px;
+                    border-bottom: 1px solid #eeeeee;
+                    @include fstyle(#333, 14px, 400);
+                    font-family: $ff;
+                    position: relative;
+                    display: block;
+
+                    &:hover {
+                        color: $hover;
+                    }
+
+                    >i {
+                        margin-right: 5px;
+                    }
+
+                    >i.fa-chevron-right {
+                        position: absolute;
+                        right: 18px;
+                        transform: translateY(50%);
+                        -webkit-transform: translateY(50%);
+                        -moz-transform: translateY(50%);
+                        -ms-transform: translateY(50%);
+                        -o-transform: translateY(50%);
+                        transition: all linear .3s;
+                        -webkit-transition: all linear .3s;
+                        -moz-transition: all linear .3s;
+                        -ms-transition: all linear .3s;
+                        -o-transition: all linear .3s;
+                    }
+
+                    &:hover i.fa-chevron-right {
+                        right: 12px;
+                    }
+                }
+
+                position: relative;
+
+                .fashion_menu {
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    width: 686px;
+                    padding-left: 20px;
+                    box-shadow: 0px 0px 10px -4px #888888;
+                    background: #fff;
+                    display: none;
+
+                    .fashion_list {
+                        ul {
+                            margin-top: 30px;
+
+                            li {
+                                h4 {
+                                    padding-bottom: 15px;
+                                    @include fstyle(#333, 15px, 600);
+                                    font-family: $ff;
+                                    border-bottom: 1px solid #eeeeee;
+                                }
+
+                                a {
+                                    @include fstyle(#666, 15px, 400);
+                                    font-family: $ff;
+                                    margin-bottom: 5px;
+
+                                    &:hover {
+                                        color: $hover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .fsn_img {
+                        position: relative;
+
+                        .img_text {
+                            position: absolute;
+                            top: 30px;
+                            left: 30px;
+
+                            h6 {
+                                @include fstyle(#666, 15px, 500);
+                                font-family: $ff;
+
+                                span {
+                                    @include fstyle($hover, 16px, 600);
+                                }
+                            }
+
+                            h4 {
+                                @include fstyle(#333, 26px, 800);
+                                font-family: $ff;
+                                margin-bottom: 15px;
+                            }
+
+                            a {
+                                @include fstyle(#333, 13px, 600);
+                                font-family: $ff;
+
+                                &:hover i {
+                                    transform: translateX(10px);
+                                    -webkit-transform: translateX(10px);
+                                    -moz-transform: translateX(10px);
+                                    -ms-transform: translateX(10px);
+                                    -o-transform: translateX(10px);
+                                    -webkit-transform: translateX();
+                                }
+                            }
+                        }
+                    }
+
+                    .home_img {
+                        position: relative;
+
+                        .home_text {
+                            position: absolute;
+                            bottom: 30px;
+                            left: 30px;
+
+                            p {
+                                @include fstyle(#fff, 15px, 500);
+                                font-family: $ff;
+                            }
+
+                            h6 {
+                                @include fstyle(#fff, 20px, 500);
+                                font-family: $ff;
+                                margin-bottom: 15px;
+
+                                span {
+                                    @include fstyle(#f77c29, 20px, 600);
+                                }
+                            }
+
+                            h4 {
+                                @include fstyle(#fff, 24px, 800);
+                                font-family: $ff;
+
+                            }
+
+                            a {
+                                @include fstyle(#fff, 13px, 600);
+                                font-family: $ff;
+
+                                &:hover i {
+                                    transform: translateX(10px);
+                                    -webkit-transform: translateX(10px);
+                                    -moz-transform: translateX(10px);
+                                    -ms-transform: translateX(10px);
+                                    -o-transform: translateX(10px);
+                                    -webkit-transform: translateX();
+                                }
+                            }
+                        }
+                    }
+
+                    .furniture_img {
+                        position: relative;
+                        margin-top: 20px;
+
+                        .furniture_text {
+                            position: absolute;
+                            top: 10px;
+                            left: 20px;
+
+                            p {
+                                @include fstyle(#fff, 14px, 500);
+                                font-family: $ff;
+                            }
+
+                            h6 {
+                                @include fstyle(#fff, 16px, 500);
+                                font-family: $ff;
+                                margin-bottom: 15px;
+
+                                span {
+                                    @include fstyle(#fff, 16px, 600);
+                                }
+                            }
+
+                            h4 {
+                                @include fstyle(#fff, 18px, 800);
+                                font-family: $ff;
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+
+                    .furniture1_img {
+                        position: relative;
+                        margin-top: 20px;
+
+                        .furniture1_text {
+                            position: absolute;
+                            top: 10px;
+                            right: 20px;
+                            text-align: right;
+
+                            p {
+                                @include fstyle(#666, 14px, 500);
+                                font-family: $ff;
+                            }
+
+                            h6 {
+                                @include fstyle(#666, 16px, 500);
+                                font-family: $ff;
+                                margin-bottom: 15px;
+
+                                span {
+                                    @include fstyle(#333, 16px, 600);
+                                }
+                            }
+
+                            h4 {
+                                @include fstyle(#333, 18px, 800);
+                                font-family: $ff;
+                                margin-bottom: 15px;
+
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .fashion_menu {
+                        display: block
+                    }
+                }
+            }
+
+            >a {
+                @include fstyle($hover, 14px, 500);
+                font-family: $ff;
+                text-transform: uppercase;
+                padding: 15px 18px 25px;
+            }
+        }
+    }
+
+    .main_menu {
+        >ul {
+            display: flex;
+
+            >li {
+                position: relative;
+                padding: 15px 0;
+                z-index: 999;
+
+                >a {
+                    padding-right: 30px;
+                    @include fstyle(#333, 14px, 600);
+                    font-family: $ff;
+
+                    i {
+                        font-size: 12px;
+                    }
+
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+
+                &:hover {
+                    .shop_mega_list {
+                        display: block;
+                    }
+                }
+
+                .shop_mega_list {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 800px;
+                    background: #fff;
+                    padding: 30px 20px 20px;
+                    box-shadow: 0px 0px 10px -4px #888888;
+                    display: none;
+
+                    .shop_common {
+                        ul {
+                            li {
+                                h4 {
+                                    @include fstyle(#333, 15px, 600);
+                                    font-family: $ff;
+                                    margin-bottom: 10px;
+                                }
+
+                                h6,
+                                h5 {
+                                    @include fstyle(#fff, 10px, 700);
+                                    font-family: $ff;
+                                    background: #ff9742;
+                                    padding: 2px 4px;
+                                    display: inline-block;
+                                    margin-left: 5px;
+                                    border-radius: 2px;
+                                    -webkit-border-radius: 2px;
+                                    -moz-border-radius: 2px;
+                                    -ms-border-radius: 2px;
+                                    -o-border-radius: 2px;
+                                }
+
+                                h5 {
+                                    background: $hover;
+                                }
+
+                                a {
+                                    @include fstyle(#666, 14px, 500);
+                                    font-family: $ff;
+                                    padding-bottom: 10px;
+
+                                    &:hover {
+                                        color: $hover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .common_drop_menu {
+                        display: block;
+                    }
+                }
+
+                .common_drop_menu {
+                    padding: 30px 0;
+                    width: 215px;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background: #fff;
+                    box-shadow: 0px 0px 10px -4px #888888;
+                    display: none;
+
+                    ul {
+                        li {
+                            a {
+                                @include fstyle(#666, 14px, 500);
+                                font-family: $ff;
+                                padding: 0 20px;
+                                margin-bottom: 10px;
+                                position: relative;
+                                display: block;
+
+                                &:hover {
+                                    color: $hover;
+                                }
+
+                                i {
+                                    position: absolute;
+                                    right: 20px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    -webkit-transform: translateY(-50%);
+                                    -moz-transform: translateY(-50%);
+                                    -ms-transform: translateY(-50%);
+                                    -o-transform: translateY(-50%);
+                                }
+                            }
+
+                            position: relative;
+
+                            &:hover {
+                                .drop_menu_list {
+                                    display: block;
+                                }
+                            }
+
+                            .drop_menu_list {
+                                width: 216px;
+                                padding: 30px 0;
+                                position: absolute;
+                                top: -30px;
+                                left: 100%;
+                                background: #f1f1f1;
+                                box-shadow: 0px 0px 10px -4px #888888;
+                                display: none;
+
+                                ul {
+                                    >li {
+                                        >a {
+                                            @include fstyle(#666, 14px, 500);
+                                            font-family: $ff;
+                                            padding: 0 20px;
+                                            margin-bottom: 10px;
+
+                                            &:hover {
+                                                color: $hover;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .menu_right {
+        padding: 15px 0;
+
+        ul {
+            li {
+                a {
+                    margin-left: 30px;
+                    @include fstyle(#333, 14px, 500);
+                    font-family: $ff;
+
+                    &:hover {
+                        color: $hover;
+                    }
+
+                    i {
+                        margin-right: 10px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+         menu part end
+======================================*/

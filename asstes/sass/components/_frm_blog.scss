@@ -1,0 +1,108 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+/*=====================================
+        our blog part start
+======================================*/
+#frm_blog {
+    padding-bottom: 60px;
+
+    .frm_blg_head {
+        p {
+            @include fstyle(#333, 22px, 600);
+            font-family: $ff;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+
+    .frm_blog_box {
+        margin-top: 20px;
+
+        .frm_blog_img {
+            width: 270px;
+            height: 170px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            overflow: hidden;
+        }
+
+        &:hover {
+            .frm_blog_img {
+                img {
+                    transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+}
+            }
+        }
+
+        .frm_blog_text {
+            text-align: center;
+            margin-top: 20px;
+
+            p {
+                @include fstyle(#666, 15px, 600);
+                font-family: $ff;
+
+                span {
+                    color: #333;
+
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+
+                &:hover {
+                    color: $hover;
+                }
+            }
+
+            h5 {
+                @include fstyle(#333, 14px, 600);
+                font-family: $ff;
+                padding: 10px 0;
+
+                &:hover {
+                    color: $hover;
+                }
+            }
+
+            a {
+                @include fstyle(#333, 14px, 400);
+                font-family: $ff;
+                position: relative;
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: 0;
+                    height: 3px;
+                    background: #333;
+                    width: 0;
+                    transition: all linear .3s;
+                    -webkit-transition: all linear .3s;
+                    -moz-transition: all linear .3s;
+                    -ms-transition: all linear .3s;
+                    -o-transition: all linear .3s;
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+        our blog part start
+======================================*/

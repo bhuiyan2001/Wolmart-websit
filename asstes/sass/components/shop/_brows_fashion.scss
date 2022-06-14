@@ -1,0 +1,88 @@
+@import '../../mixins/mixins';
+@import '../../variable/variable';
+
+/*===========================================
+            browes banner part start
+============================================*/
+#shop_banner {
+    .browes_banner_text {
+        padding-left: 0;
+    }
+}
+
+/*===========================================
+            browes banner part end
+============================================*/
+/*===========================================
+            browes product part start
+============================================*/
+#shop_product {
+    .browes_product_picture {
+        .head_part {
+            .header_left {
+                >a {
+                    padding: 10px 15px;
+                    border: 2px solid $hover;
+                    @include fstyle($hover, 14px, 500);
+                    font-family: $ff;
+                    line-height: 1;
+                    margin-right: 20px;
+                    transition: all linear .3s;
+                    -webkit-transition: all linear .3s;
+                    -moz-transition: all linear .3s;
+                    -ms-transition: all linear .3s;
+                    -o-transition: all linear .3s;
+
+                    &:hover {
+                        background: $hover;
+                        color: #fff;
+                    }
+                }
+                .offcanvas-start{
+                    width: 300px;
+                }
+
+                .close_button {
+                    button {
+                        position: absolute;
+                        top: 0;
+                        right: -100px;
+
+                        border: none;
+                        background: transparent;
+
+                        span {
+                            font-size: 45px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .apparel_right {
+            >ul {
+                >li {
+                    width: 23.685%;
+
+                    &:nth-child(3),
+                    &:nth-child(6),
+                    &:nth-child(9),
+                    &:nth-child(12) {
+                        margin-right: 20px;
+                    }
+
+                    &:nth-child(4),
+                    &:nth-child(8),
+                    &:nth-child(12) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*===========================================
+            browes product part end
+============================================*/

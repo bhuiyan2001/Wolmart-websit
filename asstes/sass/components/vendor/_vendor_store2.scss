@@ -1,0 +1,392 @@
+@import '../../mixins/mixins';
+@import '../../variable/variable';
+
+/*===========================================
+     vendor store 2  banner part start
+============================================*/
+#vendor_banner {
+    .banner_img {
+        position: relative;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        overflow: hidden;
+
+        .overly {
+            padding: 30px 0;
+            background: rgba(0, 0, 0, 0.659);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+            .logo_img {
+                width: 100px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                overflow: hidden;
+                position: absolute;
+                top: -50px;
+                left: 30px;
+            }
+
+            ul {
+                margin: 50px 0 0 40px;
+
+                li {
+                    i {
+                        color: #f95;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .banner_text {
+                h4 {
+                    @include fstyle(#fff, 20px, 600);
+                    font-family: $ff;
+                }
+
+                p {
+                    @include fstyle(#fff, 14px, 400);
+                    font-family: $ff;
+                    margin-top: 15px;
+                }
+
+                a {
+                    @include fstyle(#fff, 14px, 400);
+                    font-family: $ff;
+                    margin-top: 5px;
+                    display: block;
+
+                    &:hover {
+                        color: #f95;
+                    }
+                }
+            }
+
+            .social_icon {
+                text-align: right;
+                margin-right: 30px;
+
+                >a {
+                    padding: 8px 20px;
+                    background: #fff;
+                    @include fstyle(#333, 14px, 600);
+                    font-family: $ff;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+
+                    i {
+                        margin-right: 5px;
+                    }
+
+                    &:hover {
+                        background: #333;
+                        color: #fff;
+                    }
+                }
+
+                ul {
+                    justify-content: right;
+
+                    li {
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 5px;
+                        margin-top: -20px;
+                        text-align: center;
+                        line-height: 30px;
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+
+                        &:nth-child(1) {
+                            background: #1b4f9b;
+                        }
+
+                        &:nth-child(2) {
+                            background: #00adef;
+                        }
+
+                        &:nth-child(3) {
+                            background: #0073b2;
+                        }
+
+                        &:nth-child(4) {
+                            background: #2c567e;
+                        }
+
+                        &:nth-child(5) {
+                            background: #cc0001;
+                        }
+
+                        a {
+                            i {
+                                color: #fff;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*===========================================
+     vendor store 2  banner part start
+============================================*/
+/*===========================================
+     vendor store 2  product part start
+============================================*/
+.vendorStor2_head {
+    ul {
+        padding-bottom: 5px;
+
+        li {
+            button {
+                border: none;
+                background: transparent;
+                margin-right: 30px;
+                @include fstyle(#333, 15px, 600);
+                font-family: $ff;
+                padding-bottom: 5px;
+            }
+
+            .active {
+                color: $hover;
+                border-bottom: 3px solid $hover;
+            }
+        }
+    }
+
+    .policies_body {
+        border-bottom: 1px solid #eee;
+        margin-top: 40px;
+
+        h4 {
+            @include fstyle(#333, 19px, 600);
+            font-family: $ff;
+        }
+
+        p {
+            @include fstyle(#333, 14px, 400);
+            font-family: $ff;
+            padding: 30px 0;
+        }
+    }
+
+    .review_body {
+        padding: 30px;
+        border: 1px solid #eee;
+        margin-top: 30px;
+
+        h4 {
+            @include fstyle(#333, 19px, 600);
+            font-family: $ff;
+        }
+
+        .type_box {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #eee;
+            margin: 30px 0;
+
+            input {
+                border: none;
+            }
+        }
+
+        button {
+            border: none;
+            background: #ccc;
+            @include fstyle(#333, 15px, 600);
+            font-family: $ff;
+            padding: 10px 15px;
+
+            &:hover {
+                background: #333;
+                color: #fff;
+            }
+        }
+
+        .icon_img {
+            margin-top: 40px;
+
+            .img,
+            .img2,
+            .img3 {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border: 1px solid #fff;
+            }
+
+            position: relative;
+
+            .img2 {
+                position: absolute;
+                bottom: 0;
+                left: 25px;
+            }
+
+            .img3 {
+                position: absolute;
+                bottom: 0;
+                left: 45px;
+                z-index: 99;
+            }
+        }
+
+        h5 {
+            @include fstyle(#666, 16px, 500);
+            font-family: $ff;
+            margin-left: 60px;
+            margin-top: 8px;
+
+            a {
+                color: #333;
+                font-weight: 600;
+
+                &:hover {
+                    color: $hover;
+                }
+            }
+        }
+
+        .star_item {
+            display: flex;
+            border-bottom: 1px solid #333;
+
+            .star_box {
+                padding: 40px 0;
+
+                .star_icon {
+                    ul {
+                        li {
+                            i {
+                                color: #f95;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+
+                    p {
+                        @include fstyle(#666, 14px, 400);
+                        font-family: $ff;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .right_star {
+                margin-left: auto;
+
+                p {
+                    padding: 4px 32px 8px 10px;
+                    background: #666;
+                    @include fstyle(#fff, 28px, 400);
+                    font-family: $ff;
+                    position: relative;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+
+                    span {
+                        font-size: 20px;
+                        margin-top: 50px;
+                        position: absolute;
+                        top: -33px;
+                        right: 10px;
+                    }
+                }
+
+                ul {
+                    li {
+                        i {
+                            color: #f95;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .user_part {
+            margin-top: 40px;
+
+            .user_picture {
+                .picture {
+                    width: 70px;
+                }
+
+                p {
+                    @include fstyle(#666, 13px, 400);
+                    font-family: $ff;
+                    margin-top: 25px;
+                    margin-left: 15px;
+                }
+
+                span {
+                    padding: 0 10px;
+                    background: #666;
+                    @include fstyle(#fff, 14px, 400);
+                    font-family: $ff;
+                    margin-left: 15px;
+                }
+            }
+
+            .user_info {
+                h4 {
+                    @include fstyle(#333, 18px, 600);
+                    font-family: $ff;
+                }
+
+                p {
+                    @include fstyle(#888, 14px, 400);
+                    font-family: $ff;
+                    padding: 20px 0 10px;
+                }
+            }
+
+            .star_icon {
+                ul {
+                    li {
+                        i {
+                            color: #f95;
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                p {
+                    @include fstyle(#666, 14px, 400);
+                    font-family: $ff;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+    }
+}
+
+/*===========================================
+     vendor store 2 product part end
+============================================*/

@@ -1,0 +1,41 @@
+@import '../../mixins/mixins';
+@import '../../variable/variable';
+/*===========================================
+            shop menu start
+============================================*/
+.shop_left_menu{
+    background: #fff !important;
+    border: 1px solid #eee;
+    ul{
+        display: none;
+    }
+    &:hover{
+        ul{
+            display: block;
+        }
+        background: $hover !important;
+       > a{
+            color: #fff !important;
+        }
+    }
+}
+/*===========================================
+            shop menu end
+============================================*/
+/*===========================================
+            Breadcrumb part start 
+============================================*/
+#Breadcrumb{
+        li{
+            a{
+                color: #999;
+                &:hover{
+                    color: #333;
+                }
+            }
+        }
+    
+}
+/*===========================================
+            Breadcrumb part end
+============================================*/

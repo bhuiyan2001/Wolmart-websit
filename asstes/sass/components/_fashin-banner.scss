@@ -1,0 +1,83 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+/*=====================================
+  fashion banner part start
+======================================*/
+#fashion_bnr {
+    padding-bottom: 60px;
+
+    .fashion_banner {
+        padding: 25px 50px ;
+
+        .fashion_banner_text {
+            .text_left {
+                p {
+                    @include fstyle(#f77c29, 70px, 800);
+                    font-family: $ff;
+                    padding-right: 85px;
+                    position: relative;
+                    span {
+                        @include fstyle(#f77c29, 40px, 800);
+                        font-family: $ff;
+                        position: absolute;
+                        top: 12px;
+                        left: 90px;
+    
+                        &:last-child {
+                            top: 55px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+                border-right: 2px solid #666;
+            }
+            .text_right {
+                margin-left: 20px;
+                h4 {
+                    @include fstyle(#fff, 28px, 700);
+                    font-family: $ff;
+                    margin-bottom: 10px;
+                }
+
+                h6 {
+                    @include fstyle(#fff, 18px, 500);
+                    font-family: $ff;
+                    @include fstyle(#fff, 18px, 500);
+                    font-family: $ff;
+
+                    span {
+                        background: #fff;
+                        color: #333;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            position: relative;
+
+            a {
+                @include fstyle(#fff, 15px, 500);
+                font-family: $ff;
+                border: 2px solid #fff;
+                padding: 8px 15px;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                &:hover{
+                    color: #333;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+  fashion banner part end
+======================================*/

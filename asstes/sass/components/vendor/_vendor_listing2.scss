@@ -1,0 +1,192 @@
+@import '../../mixins/mixins';
+@import '../../variable/variable';
+
+/*===========================================
+     vendor listing 2 body part start
+============================================*/
+#vendorListing2 {
+    padding: 30px 0 60px;
+
+    .vendor_category_head {
+        border: 1px solid #ccc;
+        padding: 10px;
+        display: flex;
+
+        input {
+            border: none;
+            width: 100%;
+            @include fstyle(#666, 14px, 400);
+            font-family: $ff;
+        }
+
+        button {
+            border: none;
+            background: transparent;
+        }
+    }
+
+    .vendor_category_body {
+        h4 {
+            @include fstyle(#333, 16px, 600);
+            font-family: $ff;
+            margin: 50px 0 20px;
+        }
+
+        select {
+            padding: 8px 10px;
+            width: 100%;
+            border-color: #ccc;
+            @include fstyle(#666, 14px, 400);
+            font-family: $ff;
+            margin-bottom: 10px;
+        }
+
+        input {
+            border: 1px solid #ccc;
+            padding: 8px 10px;
+            width: 100%;
+            @include fstyle(#666, 14px, 400);
+            font-family: $ff;
+            margin-bottom: 10px;
+        }
+    }
+
+    .vendor_product_head {
+        display: flex;
+
+        select {
+            padding: 8px 10px;
+            border-color: #ccc;
+            @include fstyle(#666, 14px, 400);
+            font-family: $ff;
+        }
+
+        p {
+            @include fstyle(#666, 14px, 400);
+            font-family: $ff;
+            margin-left: auto;
+        }
+    }
+
+    .vendor_product_body {
+        .vendor_picture_item {
+            position: relative;
+            box-shadow: 0px 5px 10px -9px rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            overflow: hidden;
+            margin-top: 20px;
+
+            .overly {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+
+                h4 {
+                    a {
+                        @include fstyle(#fff, 20px, 500);
+                        font-family: $ff;
+                        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+                        margin-bottom: 10px;
+
+                        &:hover {
+                            color: $hover;
+                        }
+                    }
+                }
+
+                ul {
+                    li {
+                        i {
+                            color: #f93;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                a {
+                    display: block;
+                    @include fstyle(#fff, 13px, 400);
+                    font-family: $ff;
+                    margin-bottom: 10px;
+
+                    &:hover {
+                        color: #f93;
+                    }
+                }
+            }
+
+            position: relative;
+
+            .logo {
+                width: 85px;
+                height: 85px;
+                background: #ff9742;
+                border: 1px solid #f1f1f1;
+                position: absolute;
+                bottom: 35px;
+                right: 20px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+
+                img {
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    transition: all linear .2s;
+                    -webkit-transition: all linear .2s;
+                    -moz-transition: all linear .2s;
+                    -ms-transition: all linear .2s;
+                    -o-transition: all linear .2s;
+                }
+
+            }
+
+            &:hover {
+                .logo {
+                    img {
+                        transform: translateY(-10px);
+                        -webkit-transform: translateY(-10px);
+                        -moz-transform: translateY(-10px);
+                        -ms-transform: translateY(-10px);
+                        -o-transform: translateY(-10px);
+                    }
+                }
+            }
+
+            .foot {
+                padding: 20px;
+
+                a {
+                    padding: 8px 20px;
+                    background: #ccc;
+                    @include fstyle(#333, 14px, 500);
+                    font-family: $ff;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    margin-right: 5px;
+
+                    &:hover {
+                        background: #333;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*===========================================
+     vendor listing 2 body part start
+============================================*/

@@ -1,0 +1,143 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+/*=====================================
+         popular part start
+======================================*/
+#popular {
+    padding: 60px 0;
+
+    ul {
+        >li {
+            button {
+                padding: 10px 20px;
+                @include fstyle(#333, 14px, 600);
+                font-family: $ff;
+                background: transparent;
+                border: 1px solid #666;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+
+                .active {
+                    color: $hover;
+                }
+            }
+        }
+    }
+
+    .popular_box {
+        >ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            >li {
+                width: 18.597777%;
+                margin-right: 20px;
+                margin-bottom: 20px;
+
+                &:nth-child(5),
+                &:nth-child(10) {
+                    margin-right: 0;
+                }
+
+                .popular_item {
+                    .slide_img {
+                       img{
+                           &:last-child{
+                               display: none;
+                           }
+                       }
+                    }
+                    &:hover{
+                        .slide_img {
+                            img{
+                                &:first-child{
+                                    display: none;
+                                }
+                                &:last-child{
+                                    display: block;
+                                }
+                            }
+                         }
+                    }
+
+                    .popular_text {
+                        text-align: center;
+
+                        a {
+                            @include fstyle(#333, 14px, 400);
+                            font-family: $ff;
+                            padding: 20px 0 8px;
+                            &:hover{
+                                color: $hover;
+                            }
+                        }
+
+                        >ul {
+                            display: flex;
+                            justify-content: center;
+
+                            >li {
+                                color: #f96a02;
+                                font-size: 12px;
+                            }
+                        }
+
+                        p {
+                            @include fstyle(#333, 16px, 600);
+                            font-family: $ff;
+                        }
+                    }
+
+                    position: relative;
+
+                    &:hover .popular_icons {
+                        display: block;
+                    }
+
+                    .popular_icons {
+                        position: absolute;
+                        top: 20px;
+                        right: 10px;
+                        display: none;
+
+                        ul {
+                            li {
+                                a {
+                                    i {
+                                        color: #666;
+                                        width: 35px;
+                                        height: 35px;
+                                        background: #fff;
+                                        border-radius: 50%;
+                                        line-height: 35px;
+                                        text-align: center;
+                                        -webkit-border-radius: 50%;
+                                        -moz-border-radius: 50%;
+                                        -ms-border-radius: 50%;
+                                        -o-border-radius: 50%;
+                                        margin-bottom: 10px;
+
+                                        &:hover {
+                                            color: #fff;
+                                            background: $hover;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+         popular part end
+======================================*/
